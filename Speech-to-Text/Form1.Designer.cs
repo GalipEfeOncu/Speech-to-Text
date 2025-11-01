@@ -41,46 +41,59 @@
             // 
             // btnStart
             // 
-            btnStart.Location = new Point(3, 3);
+            btnStart.BackColor = Color.FromArgb(58, 58, 92);
+            btnStart.FlatAppearance.BorderSize = 0;
+            btnStart.FlatStyle = FlatStyle.Flat;
+            btnStart.Location = new Point(7, 7);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(100, 44);
+            btnStart.Size = new Size(100, 36);
             btnStart.TabIndex = 0;
             btnStart.Text = "Start";
-            btnStart.UseVisualStyleBackColor = true;
+            btnStart.UseVisualStyleBackColor = false;
             btnStart.Click += btnStart_Click;
             // 
             // txtResults
             // 
+            txtResults.BackColor = Color.FromArgb(20, 20, 35);
+            txtResults.BorderStyle = BorderStyle.None;
             txtResults.Dock = DockStyle.Fill;
+            txtResults.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtResults.ForeColor = Color.White;
             txtResults.Location = new Point(0, 50);
             txtResults.Multiline = true;
             txtResults.Name = "txtResults";
-            txtResults.ScrollBars = ScrollBars.Vertical;
-            txtResults.Size = new Size(800, 400);
+            txtResults.Size = new Size(784, 361);
             txtResults.TabIndex = 1;
             // 
             // btnStop
             // 
-            btnStop.Location = new Point(109, 3);
+            btnStop.BackColor = Color.FromArgb(58, 58, 92);
+            btnStop.FlatAppearance.BorderSize = 0;
+            btnStop.FlatStyle = FlatStyle.Flat;
+            btnStop.Location = new Point(113, 7);
             btnStop.Name = "btnStop";
-            btnStop.Size = new Size(100, 44);
+            btnStop.Size = new Size(100, 36);
             btnStop.TabIndex = 2;
             btnStop.Text = "Stop";
-            btnStop.UseVisualStyleBackColor = true;
+            btnStop.UseVisualStyleBackColor = false;
             btnStop.Click += btnStop_Click;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(215, 3);
+            btnSave.BackColor = Color.FromArgb(58, 58, 92);
+            btnSave.FlatAppearance.BorderSize = 0;
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.Location = new Point(219, 7);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(100, 44);
+            btnSave.Size = new Size(100, 36);
             btnSave.TabIndex = 3;
             btnSave.Text = "Save";
-            btnSave.UseVisualStyleBackColor = true;
+            btnSave.UseVisualStyleBackColor = false;
             btnSave.Click += btnSave_Click;
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(30, 30, 47);
             panel1.Controls.Add(lblStatus);
             panel1.Controls.Add(radioEnglish);
             panel1.Controls.Add(radioTurkish);
@@ -88,27 +101,30 @@
             panel1.Controls.Add(btnSave);
             panel1.Controls.Add(btnStop);
             panel1.Dock = DockStyle.Top;
+            panel1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            panel1.ForeColor = Color.White;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 50);
+            panel1.Padding = new Padding(10);
+            panel1.Size = new Size(784, 50);
             panel1.TabIndex = 4;
             // 
             // lblStatus
             // 
             lblStatus.AutoSize = true;
-            lblStatus.Location = new Point(460, 14);
+            lblStatus.Location = new Point(490, 17);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(38, 15);
+            lblStatus.Size = new Size(128, 19);
             lblStatus.TabIndex = 6;
-            lblStatus.Text = "label1";
+            lblStatus.Text = "Language: English";
             // 
             // radioEnglish
             // 
             radioEnglish.AutoSize = true;
             radioEnglish.Checked = true;
-            radioEnglish.Location = new Point(321, 12);
+            radioEnglish.Location = new Point(331, 16);
             radioEnglish.Name = "radioEnglish";
-            radioEnglish.Size = new Size(63, 19);
+            radioEnglish.Size = new Size(73, 23);
             radioEnglish.TabIndex = 5;
             radioEnglish.TabStop = true;
             radioEnglish.Text = "English";
@@ -118,9 +134,9 @@
             // radioTurkish
             // 
             radioTurkish.AutoSize = true;
-            radioTurkish.Location = new Point(390, 12);
+            radioTurkish.Location = new Point(410, 16);
             radioTurkish.Name = "radioTurkish";
-            radioTurkish.Size = new Size(64, 19);
+            radioTurkish.Size = new Size(74, 23);
             radioTurkish.TabIndex = 4;
             radioTurkish.Text = "Turkish";
             radioTurkish.UseVisualStyleBackColor = true;
@@ -130,11 +146,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(784, 411);
             Controls.Add(txtResults);
             Controls.Add(panel1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Speech to Text";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

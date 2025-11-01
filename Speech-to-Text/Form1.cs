@@ -14,6 +14,7 @@ namespace Speech_to_Text
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void InitVosk()
